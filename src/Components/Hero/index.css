@@ -82,14 +82,14 @@
 }
 
 .hero-btn-primary {
-    background: linear-gradient(135deg, #391cc6, #248990);
+    background: linear-gradient(135deg, #100547, #04071a);
     color: #d1d1d1;
     box-shadow: 0 8px 25px rgba(48, 55, 53, 0.3);
 }
 
 .hero-btn-primary:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(100, 255, 218, 0.4);
+    box-shadow: 0 15px 35px rgba(135, 145, 255, 0.4);
 }
 
 .hero-btn-secondary {

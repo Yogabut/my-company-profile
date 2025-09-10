@@ -39,7 +39,7 @@
 /* Content Card Styles */
 .content-card {
     background: rgb(33, 25, 80);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 24px;
     padding: 1.5rem;
@@ -208,7 +208,7 @@
     justify-content: center;
     margin-bottom: 0.5rem;
     position: relative;
-    background: #246980;
+    background: #28556f;
     box-shadow: 
         0 10px 25px -5px rgba(0, 0, 0, 0.2),
         0 0 0 1px rgba(255, 255, 255, 0.1);
@@ -225,7 +225,7 @@
 .feature-title {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #c4c1c1;
     margin-bottom: 0.4rem;
     transition: color 0.3s ease;
     text-align: left; 

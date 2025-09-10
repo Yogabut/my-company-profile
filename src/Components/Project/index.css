@@ -1,0 +1,33 @@
+.project {
+    background: linear-gradient(to bottom, #050119, #050f2b);
+    min-height: 100vh;
+}
+
+/* Additional responsive improvements */
+@media (max-width: 768px) {
+    .project {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Smooth hover transitions for project cards */
+.project .group:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
+/* Custom scrollbar for better UX */
+.project::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+.project::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 3px;
+}
+
+.project::-webkit-scrollbar-thumb:hover {
+    background: #718096;
+}

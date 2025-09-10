@@ -1,0 +1,83 @@
+.testimonial {
+    background: linear-gradient(to bottom, #050f2b, #050119);
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add subtle pattern overlay */
+.testimonial::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05;
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0);
+    background-size: 40px 40px;
+    pointer-events: none;
+}
+
+/* Custom padding classes for better control */
+.py-15 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+
+.px-25 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Testimonial card enhancements */
+.testimonial-card {
+    position: relative;
+}
+
+/* Add glow effect on hover */
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+    border-radius: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.testimonial-card:hover::before {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .py-15 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .px-25 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .testimonial-card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .testimonial-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Smooth scrolling for AOS animations */
+html {
+    scroll-behavior: smooth;
+}

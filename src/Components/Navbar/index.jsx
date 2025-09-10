@@ -139,7 +139,7 @@ export default function Navbar() {
                   className={classNames(
                     isActive(item)
                       ? 'text-[#0a1454] border-b-2 border-[#2b166d]'
-                      : 'text-[#f1cef1] hover:text-[#eb2fe1]',
+                      : 'text-[#bcbcbc] hover:text-[#ffffff]',
                     'transition duration-200 rounded-md px-3 py-2 text-sm font-medium'
                   )}
                 >
@@ -182,7 +182,7 @@ export default function Navbar() {
               className={classNames(
                 isActive(item)
                     ? 'text-[#0a1454] border-b-2 border-[#2b166d]'
-                    : 'text-[#f1cef1] hover:text-[#eb2fe1]',
+                      : 'text-[#bcbcbc] hover:text-[#ffffff]',
                 'transition duration-200 w-full text-left block rounded-md px-3 py-2 text-base font-medium'
               )}
             >

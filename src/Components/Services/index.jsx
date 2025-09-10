@@ -19,7 +19,7 @@ const Services = () => {
     }, []);
     return (
         <>
-        <div className="services py-8 px-4 sm:py-12 sm:px-15">
+        <div className="services py-8 px-4 sm:py-12 sm:px-20">
             {/* Heading */}
             <div 
                 className="text-gray-400 text-lg sm:text-xl body-font text-center justify-center"
@@ -65,7 +65,7 @@ const Services = () => {
 
                 {/* Konten */}
                 <div className="flex flex-col items-start relative z-10">
-                    <service.icon className="w-10 h-10 sm:w-12 sm:h-12 text-[#6ec6e9] mb-3 sm:mb-4" />
+                    <service.icon className="w-10 h-10 sm:w-12 sm:h-12 text-[#33718e] mb-3 sm:mb-4" />
                     <h2 className="text-base sm:text-xl font-semibold text-gray-100 mb-2">
                     {service.title}
                     </h2>
@@ -75,7 +75,7 @@ const Services = () => {
                 </div>
 
                 {/* Read Details kanan bawah */}
-                <button className="mt-3 sm:mt-4 text-blue-400 hover:text-blue-300 font-medium text-xs sm:text-sm transition self-end relative z-10">
+                <button className="mt-3 sm:mt-4 text-[#6376b5] hover:text-blue-300 font-medium text-xs sm:text-sm transition self-end relative z-10">
                     Read Details →
                 </button>
                 </div>

@@ -6,7 +6,7 @@ import './script';
 
 // Card components
 const Card = ({ children, className = "" }) => (
-    <div className={`bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 ${className}`}>
+    <div className={`bg-[#0f1a26] backdrop-blur-sm rounded-2xl border border-white/20 ${className}`}>
         {children}
     </div>
 );
