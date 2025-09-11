@@ -7,18 +7,32 @@ import Contact from "../Components/Contact/index.jsx";
 import Client from "../Components/Client/index.jsx";
 import Project from "../Components/Project/index.jsx";
 
-
 const Home = () => {
     return (
         <>  
-            <Hero />
-            <About />
-            <Client />
-            <Services />
-            <Project />
-            <Testimonial />
-            <Contact />
+            <section id="hero">
+                <Hero />
+            </section>
+            <section id="about">
+                <About />
+            </section>
+            <section id="client">
+                <Client />
+            </section>
+            <section id="services">
+                <Services />
+            </section>
+            <section id="project">
+                <Project />
+            </section>
+            <section id="testimonial">
+                <Testimonial />
+            </section>
+            <section id="contact">
+                <Contact />
+            </section>
         </>
     )
 }
+
 export default Home;

@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from 'luc
 
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-b from-[#050119] to-[#050f2b] border-t border-gray-800">
+        <footer className="bg-gradient-to-b from-[#050f2b] to-[#050119] border-t border-gray-800">
             {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-6 md:px-20 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">

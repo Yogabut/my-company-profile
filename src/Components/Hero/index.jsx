@@ -31,8 +31,22 @@ function Hero() {
                     <p className="hero-description">
                         By combining innovation and precision, we craft digital solutions that not only look beautiful but also perform seamlessly.                    </p>
                     <div className="hero-buttons">
-                        <button className="hero-btn hero-btn-primary">Get Started</button>
-                        <button className="hero-btn hero-btn-secondary">See Our Work</button>
+                        <button
+                        className="hero-btn hero-btn-primary"
+                        onClick={() => {
+                            document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+                        }}
+                        >
+                            Get Started
+                        </button>                        
+                        <button 
+                        className="hero-btn hero-btn-secondary"
+                        onClick={() => {
+                            document.getElementById("project")?.scrollIntoView({ behavior: "smooth" });
+                        }}
+                        >
+                            Recent Project
+                        </button>
                     </div>
                 </div>
                 <div className="scroll-indicator">
