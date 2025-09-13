@@ -2,6 +2,7 @@ import './index.css'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link dari react-router-dom
 import { projectData } from "../../Utils/Data/project.js";
 
 const Project = () => {
@@ -110,19 +111,17 @@ const Project = () => {
                                     ) : null}
                                 </div>
 
-                                {/* View Project Link */}
+                                {/* View Project Link - Updated to use React Router Link */}
                                 <div className="pt-2">
-                                    <a 
-                                        href={project.link}
+                                    <Link 
+                                        to={`/project/${project.id}/${project.title .toLowerCase().replace(/\s+/g, '-')}`}
                                         className="inline-flex items-center text-[#6376b5] hover:text-blue-300 font-medium transition-colors duration-300"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
                                     >
                                         View Project
                                         <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                         </svg>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
