@@ -9,6 +9,8 @@ import './style.css';
 const ProjectDetail = ({ projectId }) => {
     const [project, setProject] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [imageList, setImageList] = useState([]);
 
     useEffect(() => {
         // Inisialisasi AOS
@@ -23,6 +25,19 @@ const ProjectDetail = ({ projectId }) => {
         
         if (foundProject) {
             setProject(foundProject);
+            
+            // Buat array semua images (main image + additional images)
+            const allImages = [
+                foundProject.image,
+                foundProject.image1,
+                foundProject.image2,
+                foundProject.image3,
+                foundProject.image4,
+                foundProject.iamge5 // Note: ada typo di data, tapi kita ikuti saja
+            ].filter(img => img); // Filter out undefined/null images
+            
+            setImageList(allImages);
+            setSelectedImage(foundProject.image); // Set main image as default
         }
         
         setLoading(false);
@@ -55,41 +70,69 @@ const ProjectDetail = ({ projectId }) => {
         <div className="project-detail min-h-screen text-white py-25">
             {/* Project Title & Services */}
             <div className="mb-8 mx-auto px-4 sm:px-8 md:px-16 lg:px-32 xl:px-50">
-                    <h1 
-                        className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
-                        data-aos ="fade-down"
+                <h1 
+                    className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-br from-[#4671b0] to-[#1c3c5a] bg-clip-text text-transparent"
+                    data-aos="fade-down"
+                >
+                    {project.title}
+                </h1>
+                <div 
+                    className="flex flex-wrap gap-3 mb-6"
+                    data-aos="zoom-in"
+                >
+                    {project.services.map((service, index) => (
+                        <span 
+                            key={index}
+                            className="inline-flex items-center px-3 py-3 rounded-lg text-xs font-medium bg-gradient-to-r from-[#17324b]/20 to-[#4d94ff]/20 text-[#ced2df] border border-[#6376b5]/30"
                         >
-                        {project.title}
-                        
-                    </h1>
-                    <div 
-                        className="flex flex-wrap gap-3 mb-6"
-                        data-aos ="zoom-in"
-                        >
-                        {project.services.map((service, index) => (
-                            <span 
-                                key={index}
-                                className="inline-flex items-center px-4 py-2 rounded-xl text-sm font-medium bg-blue-900 text-white"
-                            >
-                                {service}
-                            </span>
-                        ))}
-                    </div>
-                    <p 
-                        className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-4xl"
-                        data-aos ="fade-up"
-                        >
-                        {project.subdescription}
-                    </p>
+                            {service}
+                        </span>
+                    ))}
+                </div>
+                <p 
+                    className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-4xl"
+                    data-aos="fade-up"
+                >
+                    {project.subdescription}
+                </p>
             </div>
-            {/* Hero Section */}
-            <div className="relative h-96 md:h-[650px] overflow-hidden mb-5">
-                <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-270 h-full rounded-4xl object-cover justify-center mx-auto"
-                    data-aos="zoom-out"
-                />
+
+            {/* Image Gallery Section */}
+            <div className="mx-auto px-4 sm:px-8 md:px-16 lg:px-32 xl:px-50">
+                {/* Main Image Display */}
+                <div className="relative h-96 md:h-[600px] overflow-hidden mb-3">
+                    <img 
+                        src={selectedImage} 
+                        alt={project.title}
+                        className="w-full h-full rounded-4xl object-cover"
+                        data-aos="zoom-out"
+                    />
+                </div>
+
+                {/* Image Selector Thumbnails */}
+                {imageList.length > 1 && (
+                    <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
+                        <div className="flex gap-3 p-2 bg-[#1d1d39] rounded-2xl max-w-fit mb-3">
+                            {imageList.map((image, index) => (
+                                <div
+                                    key={index}
+                                    className={`cursor-pointer transition-all duration-300 rounded-lg overflow-hidden border-2 ${
+                                        selectedImage === image 
+                                            ? 'border-[#5f62c0] ring-2 ring-[#5f62c0] ring-opacity-50' 
+                                            : 'border-gray-600 hover:border-gray-400'
+                                    }`}
+                                    onClick={() => setSelectedImage(image)}
+                                >
+                                    <img 
+                                        src={image} 
+                                        alt={`${project.title} - View ${index + 1}`}
+                                        className="w-16 h-16 md:w-20 md:h-20 object-cover hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
             </div>
 
             {/* Content Section */}
@@ -98,7 +141,7 @@ const ProjectDetail = ({ projectId }) => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
                     {/* Main Content */}
                     <div className="lg:col-span-2" data-aos="fade-right">
-                        <div className="bg-gray-800 rounded-2xl p-8 mb-8">
+                        <div className="bg-[#1d1d39] rounded-2xl p-8 mb-8">
                             <h2 className="text-2xl font-bold mb-6 text-white">Project Overview</h2>
                             <p className="text-gray-300 text-lg leading-relaxed mb-6">
                                 {project.description}
@@ -106,13 +149,13 @@ const ProjectDetail = ({ projectId }) => {
                         </div>
 
                         {/* Technologies & Services */}
-                        <div className="bg-gray-800 rounded-2xl p-8">
+                        <div className="bg-[#1d1d39] rounded-2xl p-6">
                             <h3 className="text-xl font-bold mb-6 text-white">Services & Technologies</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {project.subservices.map((subservice, index) => (
                                     <div key={index} className="flex items-center space-x-3">
-                                        <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                                        <span className="text-gray-300">{subservice}</span>
+                                        <div className="w-2 h-2 bg-[#5f62c0] rounded-full"></div>
+                                        <span className="inline-flex items-center px-3 py-2 rounded-lg text-xs font-medium bg-gradient-to-r from-[#17324b]/20 to-[#4d94ff]/20 text-[#ced2df] border border-[#6376b5]/30">{subservice}</span>
                                     </div>
                                 ))}
                             </div>
@@ -122,7 +165,7 @@ const ProjectDetail = ({ projectId }) => {
                     {/* Sidebar */}
                     <div className="space-y-8" data-aos="fade-left">
                         {/* Project Info */}
-                        <div className="bg-gray-800 rounded-2xl p-6">
+                        <div className="bg-[#1d1d39] rounded-2xl p-6">
                             <h3 className="text-xl font-bold mb-4 text-white">Project Info</h3>
                             <div className="space-y-4">
                                 <div>
@@ -131,17 +174,30 @@ const ProjectDetail = ({ projectId }) => {
                                 </div>
                                 <div>
                                     <label className="text-gray-400 text-sm">Category</label>
-                                    <p className="text-white font-medium">{project.services.join(', ')}</p>
+                                    <div className="flex flex-wrap gap-2 mt-2">
+                                        {project.services.map((service, index) => (
+                                            <span 
+                                                key={index}
+                                                className="inline-flex items-center px-3 py-2 rounded-lg text-xs font-medium bg-gradient-to-r from-[#17324b]/20 to-[#4d94ff]/20 text-[#ced2df] border border-[#6376b5]/30"
+                                            >
+                                                {service}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
                                 <div>
                                     <label className="text-gray-400 text-sm">Status</label>
                                     <p className="text-green-400 font-medium">Completed</p>
                                 </div>
+                                <div>
+                                    <label className="text-gray-400 text-sm">Images Available</label>
+                                    <p className="text-white font-medium">{imageList.length} Photos</p>
+                                </div>
                             </div>
                         </div>
 
                         {/* Visit Project */}
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6">
+                        <div className="bg-gradient-to-r from-[#1d1d39] to-[#1d1d39] rounded-2xl p-6">
                             <h3 className="text-xl font-bold mb-4 text-white">Visit Project</h3>
                             <p className="text-blue-100 mb-6 text-sm">
                                 Check out the live project and see it in action.
@@ -150,7 +206,7 @@ const ProjectDetail = ({ projectId }) => {
                                 href={project.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                                className="inline-flex items-center justify-center w-full bg-white text-[#1d1d39] px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition-colors"
                             >
                                 Visit Live Site
                                 <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -160,14 +216,14 @@ const ProjectDetail = ({ projectId }) => {
                         </div>
 
                         {/* Contact CTA */}
-                        <div className="bg-gray-800 rounded-2xl p-6">
+                        <div className="bg-[#1d1d39] rounded-2xl p-6">
                             <h3 className="text-xl font-bold mb-4 text-white">Like This Project?</h3>
                             <p className="text-gray-400 mb-6 text-sm">
                                 Get in touch with us to discuss your next project.
                             </p>
                             <Link 
-                                to="/"
-                                className="inline-flex items-center justify-center w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                                to="/#contact"
+                                className="inline-flex items-center justify-center w-full bg-[#1e2183] text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
                             >
                                 Start Your Project
                             </Link>
@@ -188,7 +244,7 @@ const ProjectDetail = ({ projectId }) => {
                                     to={`/project/${otherProject.id}`}
                                     className="group"
                                 >
-                                    <div className="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-colors">
+                                    <div className="bg-[#1d1d39] rounded-xl overflow-hidden hover:bg-[#2f2f5b] transition-colors">
                                         <div className="aspect-[4/3] overflow-hidden">
                                             <img 
                                                 src={otherProject.image} 

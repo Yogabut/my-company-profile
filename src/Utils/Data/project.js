@@ -2,6 +2,11 @@ export const projectData = [
     {
         id: 1,
         image:"/product/coffeeshop.jpg",
+        image1:"/product/travel.jpg",
+        image2:"/product/psikotest.jpg",
+        image3:"/product/psikotest.jpg",
+        image4:"/product/architecture.jpg",
+        iamge5:"/product/coffeeshop.jpg",
         title:"Kopiku Website",
         services:[
             "Web Development", 
@@ -15,12 +20,17 @@ export const projectData = [
             "SEO Optimization"
         ],
         subdescription:"A landing page website for a coffee shop to showcase their products and services.",
-        description:"Kopiku is a coffee shop that offers a variety of coffee blends and pastries. The website features a modern design with a focus on showcasing their products and services.",
+        description:"Kopiku is a coffee shop that offers a variety of coffee blends and pastries. The website features a modern design with a focus on showcasing their products and services, as well as providing information about the shop's history and values. A user-friendly interface allows customers to easily navigate the site and find what they are looking for. The website is optimized for search engines to increase visibility and attract more customers. Finally, the website is fully responsive and looks great on all devices, ensuring a seamless user experience.",
         link:"https://kopiku.com",
     },
     {
         id: 2,
         image:"/product/travel.jpg",
+        image1:"/product/travel.jpg",
+        image2:"/product/psikotest.jpg",
+        image3:"/product/psikotest.jpg",
+        image4:"/product/architecture.jpg",
+        iamge5:"/product/coffeeshop.jpg",
         title:"Travelin Website",
         services:[
             "Web Development", 
@@ -40,6 +50,11 @@ export const projectData = [
     {
         id: 3,
         image:"/product/psikotest.jpg",
+        image1:"/product/travel.jpg",
+        image2:"/product/psikotest.jpg",
+        image3:"/product/psikotest.jpg",
+        image4:"/product/architecture.jpg",
+        iamge5:"/product/coffeeshop.jpg",
         title:"Psitest Mobile App",
         services:[
             "Mobile Development"
@@ -57,6 +72,11 @@ export const projectData = [
     {
         id: 4,
         image:"/product/architecture.jpg",
+        image1:"/product/travel.jpg",
+        image2:"/product/psikotest.jpg",
+        image3:"/product/psikotest.jpg",
+        image4:"/product/architecture.jpg",
+        iamge5:"/product/coffeeshop.jpg",
         title:"Kotak Architecture Footage",
         services:[
             "Fotography & Videography"

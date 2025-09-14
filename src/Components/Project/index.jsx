@@ -2,7 +2,7 @@ import './index.css'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Import Link dari react-router-dom
+import { Link } from 'react-router-dom'; 
 import { projectData } from "../../Utils/Data/project.js";
 
 const Project = () => {
@@ -14,6 +14,9 @@ const Project = () => {
             offset: 100
         });
     }, []);
+    
+    // Ambil hanya 2 project pertama
+    const limitedProjects = projectData && projectData.length > 0 ? projectData.slice(0, 2) : [];
     
     return (
         <div className="project px-6 md:px-20 py-16 md:py-20">
@@ -36,8 +39,8 @@ const Project = () => {
 
             {/* Projects Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-7xl mx-auto">
-                {projectData && projectData.length > 0 ? (
-                    projectData.map((project, index) => (
+                {limitedProjects.length > 0 ? (
+                    limitedProjects.map((project, index) => (
                         <div 
                             key={project.id} 
                             className="group cursor-pointer"
@@ -72,7 +75,7 @@ const Project = () => {
                                         project.services.map((service, index) => (
                                             <span 
                                                 key={index}
-                                                className="inline-flex items-center px-4 py-2 rounded-xl text-sm font-medium bg-gray-800 text-gray-300 border border-gray-700"
+                                                className="inline-flex items-center px-3 py-2 rounded-lg text-xs font-medium bg-gradient-to-r from-[#17324b]/20 to-[#4d94ff]/20 text-[#ced2df] border border-[#6376b5]/30"
                                             >
                                                 {service}
                                             </span>
@@ -110,8 +113,7 @@ const Project = () => {
                                         </>
                                     ) : null}
                                 </div>
-
-                                {/* View Project Link - Updated to use React Router Link */}
+                                {/* View Project Link */}
                                 <div className="pt-2">
                                     <Link 
                                         to={`/project/${project.id}/${project.title .toLowerCase().replace(/\s+/g, '-')}`}
@@ -132,6 +134,21 @@ const Project = () => {
                     </div>
                 )}
             </div>
+
+            {/* View All Projects Button */}
+            {projectData && projectData.length > 2 && (
+                <div className="flex justify-center mt-12" data-aos="fade-up" data-aos-delay="400">
+                    <Link 
+                        to="/all-project"
+                        className="bg-gradient-to-r from-[#0c243b] to-[#143463] text-white px-8 py-4 rounded-xl font-medium hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center"
+                    >
+                        View All Projects
+                        <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </Link>
+                </div>
+            )}
         </div>
     )
 }

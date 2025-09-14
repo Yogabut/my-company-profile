@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Home from './Pages/Home.jsx'
 import ProjectDetailPage from './Pages/ProjectDetail.jsx'
+import AllProject from './Pages/OtherProject.jsx'
 import Navbar from './Components/Navbar/index.jsx'
 import Footer from './Components/Footer/index.jsx'
 import './App.css'
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/project/:id/:title' element={<ProjectDetailPage />} />
+          <Route path='/all-project' element={<AllProject />} />
         </Routes>
         <Footer />
       </Router>
