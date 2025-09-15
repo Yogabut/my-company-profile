@@ -23,6 +23,8 @@ export const projectData = [
         description:"Kopiku is a coffee shop that offers a variety of coffee blends and pastries. The website features a modern design with a focus on showcasing their products and services, as well as providing information about the shop's history and values. A user-friendly interface allows customers to easily navigate the site and find what they are looking for. The website is optimized for search engines to increase visibility and attract more customers. Finally, the website is fully responsive and looks great on all devices, ensuring a seamless user experience.",
         link:"https://kopiku.com",
     },
+
+
     {
         id: 2,
         image:"/product/travel.jpg",
@@ -47,6 +49,8 @@ export const projectData = [
         description:"Travelin is a travel agency that offers a variety of travel packages and services. The website features a modern design with a focus on showcasing their travel packages and services.",
         link:"https://travelin.com",
     },
+
+
     {
         id: 3,
         image:"/product/psikotest.jpg",
@@ -69,6 +73,8 @@ export const projectData = [
         description:"Psitest is a psychological testing service that offers a variety of psychological tests and assessments. The mobile application features a modern design with a focus on providing users with easy access to various psychological tests and assessments.",
         link:"https://psitest.com",
     },
+
+    
     {
         id: 4,
         image:"/product/architecture.jpg",

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Home from './Pages/Home.jsx'
 import ProjectDetailPage from './Pages/ProjectDetail.jsx'
 import AllProject from './Pages/OtherProject.jsx'
+import ServiceDetailPage from './Pages/Service.jsx'
 import Navbar from './Components/Navbar/index.jsx'
 import Footer from './Components/Footer/index.jsx'
 import './App.css'
@@ -32,6 +33,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/project/:id/:title' element={<ProjectDetailPage />} />
           <Route path='/all-project' element={<AllProject />} />
+          <Route path='/services/:id/:title' element={<ServiceDetailPage />} />
         </Routes>
         <Footer />
       </Router>

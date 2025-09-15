@@ -18,7 +18,7 @@ const OtherProject = () => {
         });
     }, []);
 
-    // Get unique services for filter options
+    // Get unique services
     const getUniqueServices = () => {
         const allServices = projectData.flatMap(project => project.services || []);
         return [...new Set(allServices)];
@@ -26,7 +26,7 @@ const OtherProject = () => {
 
     const filterOptions = ['All Project', ...getUniqueServices()];
 
-    // Filter projects based on selected category
+    // Filter projects 
     const handleFilterChange = (filter) => {
         setActiveFilter(filter);
         if (filter === 'All Project') {

@@ -5,6 +5,7 @@ import "./index.css";
 import { servicesData } from "../../Utils/Data/services.js";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Services = () => {
     useEffect(() => {
@@ -75,9 +76,15 @@ const Services = () => {
                 </div>
 
                 {/* Read Details kanan bawah */}
-                <button className="mt-3 sm:mt-4 text-[#6376b5] hover:text-blue-300 font-medium text-xs sm:text-sm transition self-end relative z-10">
-                    Read Details →
-                </button>
+                <Link 
+                    to={`/services/${service.id}/${service.title .toLowerCase().replace(/\s+/g, '-')}`}
+                    className="inline-flex items-center text-[#6376b5] hover:text-blue-300 font-medium transition-colors duration-300"
+                >
+                    Read Details
+                <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+                </Link>
                 </div>
             ))}
             </div>
