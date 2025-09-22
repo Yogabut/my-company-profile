@@ -39,18 +39,18 @@ const Contact = () => {
     const contactInfo = [
         {
             icon: <MapPin className="w-6 h-6 text-white" />,
-            title: "Visit Our Studio",
-            details: ["123 Architecture Avenue", "Design District, NY 10001"]
+            title: "Visit Our Office",
+            details: ["Asta Digital Solution", "Denpasar, Bali"]
         },
         {
             icon: <Phone className="w-6 h-6 text-white" />,
             title: "Call Us",
-            details: ["+1 (555) 123-4567", "+1 (555) 987-6543"]
+            details: ["+6281945062598"]
         },
         {
             icon: <Mail className="w-6 h-6 text-white" />,
             title: "Email Us",
-            details: ["hello@architecturestudio.com", "projects@architecturestudio.com"]
+            details: ["astadigital@gmail.com", "yoga.asta.pra@gmail.com"]
         },
         {
             icon: <Clock className="w-6 h-6 text-white" />,
@@ -165,21 +165,6 @@ const Contact = () => {
                             </div>
                             </div>
                         ))}
-                        </div>
-
-
-                        {/* Map Placeholder */}
-                        <div className="rounded-2xl overflow-hidden bg-white/5 backdrop-blur-md border border-gray-700/50" data-aos="fade-up">
-                            <div className="w-full h-64 bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center relative">
-                                <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/10 to-transparent"></div>
-                                <div className="text-center z-10">
-                                    <svg className="h-12 w-12 text-blue-200 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                                    </svg>
-                                    <h4 className="text-white font-medium mb-2">Our Location</h4>
-                                    <p className="text-gray-400 text-sm">Interactive map coming soon</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

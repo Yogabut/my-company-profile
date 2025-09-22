@@ -4,7 +4,7 @@ const Bottom = () => {
                 <div className="max-w-7xl mx-auto px-6 md:px-20 py-6">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                         <div className="text-gray-400 text-sm mb-4 md:mb-0">
-                            © 2025 Your Company. All rights reserved.
+                            © 2025 Asta Digital Solution. All rights reserved.
                         </div>
                         
                         <div className="flex flex-wrap gap-6 text-sm">

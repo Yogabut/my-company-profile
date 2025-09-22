@@ -120,20 +120,20 @@ const MainFooter = () => {
                                         <MapPin className="w-5 h-5 mt-1 text-[#6376b5]" />
                                         <div>
                                             <p className="text-gray-400">
-                                                123 Business Street<br />
-                                                Jakarta, Indonesia 12345
+                                                Asta Didital Solutions<br />
+                                                Denpasar, Bali, Indonesia.
                                             </p>
                                         </div>
                                     </div>
                                     
                                     <div className="flex items-center space-x-3">
                                         <Phone className="w-5 h-5 text-[#6376b5]" />
-                                        <p className="text-gray-400">+62 123 456 7890</p>
+                                        <p className="text-gray-400">+62 819-4506-2598</p>
                                     </div>
                                     
                                     <div className="flex items-center space-x-3">
                                         <Mail className="w-5 h-5 text-[#6376b5]" />
-                                        <p className="text-gray-400">hello@yourcompany.com</p>
+                                        <p className="text-gray-400">astadigital@gmail.com</p>
                                     </div>
                                 </div>
                             </div>

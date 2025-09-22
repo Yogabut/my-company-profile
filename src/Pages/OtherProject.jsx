@@ -1,5 +1,4 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import OtherProject from "../Components/OtherProject";
