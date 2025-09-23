@@ -120,7 +120,7 @@ const MainFooter = () => {
                                         <MapPin className="w-5 h-5 mt-1 text-[#6376b5]" />
                                         <div>
                                             <p className="text-gray-400">
-                                                Asta Didital Solutions<br />
+                                                Asta Digital Solutions<br />
                                                 Denpasar, Bali, Indonesia.
                                             </p>
                                         </div>
