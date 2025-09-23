@@ -9,35 +9,35 @@ export const servicesData = [
         subservices: [
             {
                 id: 11,
-                name: "System Design",
-                description: "We create scalable and efficient design systems that ensure consistency across all digital and print platforms. This helps your brand maintain a professional look, improves collaboration between teams, and strengthens recognition in the market.",
-                price: "$2,500 - $8,000",
-                timeline: "3-6 weeks",
-                features: ["Design tokens", "Component library", "Style guidelines", "Documentation"]
+                name: "Brand Identity Kit",
+                description: "A complete visual identity package including logo, typography, and color palette to ensure your brand is memorable and consistent everywhere.",
+                price: "$1,000 - $5,000",
+                timeline: "2-4 weeks",
+                features: ["Logo design", "Color palette", "Typography guide", "Usage guidelines"]
             },
             {
                 id: 12,
                 name: "UI/UX Design",
-                description: "Our user interface and experience design focuses on simplicity, usability, and delight. By mapping user journeys and optimizing touchpoints, we enhance engagement and loyalty, which ultimately grows your brand's long-term value.",
+                description: "We design user-friendly interfaces and experiences that make your website or app more engaging, intuitive, and enjoyable for customers.",
                 price: "$1,500 - $5,000",
                 timeline: "2-4 weeks",
-                features: ["User research", "Wireframing", "Prototyping", "User testing"]
+                features: ["User flows", "Wireframes", "Interactive prototypes", "Usability testing"]
             },
             {
                 id: 13,
-                name: "Graphic Design",
-                description: "We produce impactful visuals — from logos to promotional assets — that communicate your brand's personality. Strong graphic design elevates your presence across campaigns, social media, and marketing materials, building emotional connections with customers.",
+                name: "Marketing Visuals",
+                description: "From social media posts to campaign graphics, we create visuals that attract attention and communicate your brand message effectively.",
                 price: "$500 - $3,000",
                 timeline: "1-3 weeks",
-                features: ["Logo design", "Brand assets", "Print materials", "Digital graphics"]
+                features: ["Social media kits", "Ads graphics", "Posters & flyers", "Digital banners"]
             },
             {
                 id: 14,
                 name: "IT Audit & Consulting",
-                description: "We analyze and evaluate your IT ecosystem to ensure security, compliance, and efficiency. By streamlining systems, we enable brands to innovate faster and allocate resources more effectively toward growth and market expansion.",
+                description: "We analyze your IT systems to improve efficiency, security, and compliance. This ensures your brand runs smoothly and is ready to scale.",
                 price: "$3,000 - $10,000",
                 timeline: "4-8 weeks",
-                features: ["Security assessment", "Performance audit", "Compliance check", "Recommendations"]
+                features: ["Security check", "Performance audit", "Compliance review", "Action plan"]
             }
         ]
     },
@@ -46,39 +46,55 @@ export const servicesData = [
         id: 2,
         title: "Web Development",
         icon: CodeXml,
-        description: "We build responsive, fast, and secure websites that deliver seamless experiences. From company profiles to e-commerce, our solutions grow with your business.",
+        description: "We build responsive, fast, and secure websites tailored to your business needs. From personal branding to enterprise-level platforms, our solutions scale with your goals.",
         subservices: [
             {
                 id: 21,
-                name: "Frontend Development",
-                description: "We build modern, responsive, and interactive interfaces that reflect your brand identity. Optimized performance and appealing visuals improve user trust, which is crucial for scaling your brand's digital presence.",
-                price: "$2,000 - $8,000",
-                timeline: "2-6 weeks",
-                features: ["Responsive design", "React/Vue.js", "Performance optimization", "Cross-browser compatibility"]
+                name: "Personal Website",
+                description: "A simple website for personal branding, portfolios, or freelancers who want to showcase work and attract clients.",
+                price: "$500 - $2,000",
+                timeline: "1-3 weeks",
+                features: ["Portfolio showcase", "Contact form", "Responsive design", "SEO basics"]
             },
             {
                 id: 22,
-                name: "Backend Development",
-                description: "We develop secure, scalable server-side applications that ensure smooth operations behind the scenes. A solid backend supports sustainable growth by making sure your business runs efficiently as traffic and demand increase.",
-                price: "$3,000 - $12,000",
-                timeline: "3-8 weeks",
-                features: ["API development", "Database design", "Security implementation", "Scalable architecture"]
+                name: "Professional Website",
+                description: "A company profile or multi-page website to showcase services, teams, and projects. Perfect for growing businesses.",
+                price: "$1,500 - $6,000",
+                timeline: "2-5 weeks",
+                features: ["About & services", "Portfolio/case studies", "Custom forms", "Scalability"]
             },
             {
                 id: 23,
-                name: "Maintenance & Support",
-                description: "We provide continuous monitoring, updates, and improvements to keep your website secure and reliable. A stable online presence is essential to retain customers and reinforce brand reputation.",
-                price: "$200 - $1,000/month",
-                timeline: "Ongoing",
-                features: ["Regular updates", "Security monitoring", "Performance optimization", "24/7 support"]
+                name: "Enterprise Website",
+                description: "Advanced corporate websites with features like multi-language, integrations, or custom workflows for large organizations.",
+                price: "$4,000 - $15,000",
+                timeline: "4-8 weeks",
+                features: ["Custom integrations", "Multi-language support", "Advanced security", "High scalability"]
             },
             {
                 id: 24,
+                name: "E-Commerce Website",
+                description: "An online store with secure payments and user-friendly shopping experiences, helping you sell products or services with ease.",
+                price: "$3,000 - $12,000",
+                timeline: "4-8 weeks",
+                features: ["Product catalog", "Shopping cart", "Payment gateway", "Order management"]
+            },
+            {
+                id: 25,
+                name: "Maintenance & Support",
+                description: "Ongoing updates, fixes, and monitoring to ensure your website stays secure, optimized, and reliable.",
+                price: "$200 - $1,000/month",
+                timeline: "Ongoing",
+                features: ["Regular updates", "Security monitoring", "Backup & recovery", "24/7 support"]
+            },
+            {
+                id: 26,
                 name: "SEO Optimization",
-                description: "We implement strategies to improve your search engine rankings and organic visibility. This drives more qualified traffic, boosts conversions, and positions your brand as a leader in its industry.",
+                description: "Boost your website visibility in search engines with proven SEO strategies to increase organic traffic and conversions.",
                 price: "$800 - $3,000/month",
                 timeline: "3-6 months",
-                features: ["Keyword research", "On-page optimization", "Technical SEO", "Analytics reporting"]
+                features: ["Keyword research", "On-page SEO", "Technical SEO", "Analytics reporting"]
             }
         ]
     },
@@ -91,35 +107,35 @@ export const servicesData = [
         subservices: [
             {
                 id: 31,
-                name: "Mobile Apps Development",
-                description: "We design and build cross-platform apps that ensure consistent user experiences across devices. This helps brands expand reach and create stronger engagement in competitive digital markets.",
+                name: "Cross-Platform App",
+                description: "One app that works on both Android and iOS, saving costs and ensuring consistent user experiences.",
                 price: "$8,000 - $25,000",
                 timeline: "8-16 weeks",
-                features: ["Cross-platform development", "Native performance", "App store deployment", "User analytics"]
+                features: ["Single codebase", "Native performance", "App store ready", "Analytics integration"]
             },
             {
                 id: 32,
-                name: "Android Development",
-                description: "We develop native Android apps tailored to different industries, optimized for performance and usability. Strong Android presence gives your brand access to one of the largest user bases worldwide.",
+                name: "Android App",
+                description: "Native Android app development optimized for usability, speed, and compatibility across devices.",
                 price: "$5,000 - $20,000",
                 timeline: "6-12 weeks",
-                features: ["Native Android", "Material Design", "Google Play optimization", "Device compatibility"]
+                features: ["Native Android", "Material Design", "Play Store optimization", "Device compatibility"]
             },
             {
                 id: 33,
-                name: "iOS Development",
-                description: "We create premium iOS apps with seamless integration into Apple's ecosystem. This not only elevates user trust but also positions your brand in high-value markets where quality matters most.",
+                name: "iOS App",
+                description: "Premium iOS apps seamlessly integrated with the Apple ecosystem for high-value markets.",
                 price: "$6,000 - $22,000",
                 timeline: "6-14 weeks",
-                features: ["Native iOS", "Human Interface Guidelines", "App Store optimization", "iOS ecosystem integration"]
+                features: ["Native iOS", "App Store ready", "Smooth UX", "Apple ecosystem integration"]
             },
             {
                 id: 34,
-                name: "Maintenance & Support",
-                description: "We provide updates, patches, and performance enhancements to keep your app secure and relevant. Consistent improvements maintain user satisfaction and ensure your brand adapts to market changes.",
+                name: "App Maintenance",
+                description: "Keep your app up-to-date, secure, and bug-free with regular updates and improvements.",
                 price: "$500 - $2,000/month",
                 timeline: "Ongoing",
-                features: ["Regular updates", "Bug fixes", "Performance monitoring", "Feature enhancements"]
+                features: ["Bug fixes", "Performance updates", "Security patches", "Feature enhancements"]
             }
         ]
     },
@@ -133,15 +149,15 @@ export const servicesData = [
             {
                 id: 41,
                 name: "Ads Management",
-                description: "We design and manage targeted advertising campaigns that maximize ROI. Through precision targeting, your brand connects with the right audience, increasing awareness and accelerating growth.",
+                description: "We create and manage advertising campaigns that maximize ROI by reaching the right people at the right time.",
                 price: "$1,000 - $5,000/month",
                 timeline: "Ongoing",
-                features: ["Campaign strategy", "Ad creation", "Audience targeting", "Performance optimization"]
+                features: ["Ad creation", "Targeting", "Optimization", "Reporting"]
             },
             {
                 id: 42,
-                name: "Content Marketing Strategy",
-                description: "We build strategic content plans that align with your brand's goals. Quality storytelling drives engagement, strengthens brand voice, and builds trust that translates into customer loyalty.",
+                name: "Content Marketing",
+                description: "We plan and create engaging content that builds trust, strengthens your brand, and drives long-term growth.",
                 price: "$1,500 - $4,000/month",
                 timeline: "Ongoing",
                 features: ["Content strategy", "Editorial calendar", "Content creation", "Performance tracking"]
@@ -149,18 +165,18 @@ export const servicesData = [
             {
                 id: 43,
                 name: "Social Media Management",
-                description: "We handle content creation, scheduling, and engagement across platforms. Consistent activity ensures your brand remains visible, relevant, and closely connected to its audience.",
+                description: "We handle your social media presence with consistent posting, community engagement, and data-driven growth strategies.",
                 price: "$800 - $3,000/month",
                 timeline: "Ongoing",
-                features: ["Content creation", "Social scheduling", "Community management", "Analytics reporting"]
+                features: ["Post creation", "Scheduling", "Community management", "Analytics"]
             },
             {
                 id: 44,
-                name: "Brand Scaling Strategy",
-                description: "We combine analytics, market insights, and creative execution to expand your brand's reach. This data-driven approach ensures sustainable growth and positions your brand as a market leader.",
+                name: "Brand Growth Strategy",
+                description: "We combine data insights and creative execution to expand your brand’s market reach and positioning.",
                 price: "$3,000 - $10,000",
                 timeline: "6-12 weeks",
-                features: ["Market analysis", "Growth strategy", "Brand positioning", "Implementation roadmap"]
+                features: ["Market analysis", "Growth roadmap", "Brand positioning", "Execution plan"]
             }
         ]
     },
@@ -174,31 +190,31 @@ export const servicesData = [
             {
                 id: 51,
                 name: "Product Photography",
-                description: "We create high-quality product images that highlight features and details. Professional visuals improve trust, attract buyers, and make your brand stand out in competitive markets.",
+                description: "High-quality product photos that build trust, attract buyers, and make your brand stand out.",
                 price: "$300 - $1,500/session",
                 timeline: "1-2 weeks",
-                features: ["Studio photography", "Lifestyle shots", "360° product views", "Image retouching"]
+                features: ["Studio shots", "Lifestyle photos", "360° views", "Image retouching"]
             },
             {
                 id: 52,
-                name: "Event Photography & Videography",
-                description: "We capture events with precision and creativity, ensuring every highlight is preserved. Documented memories reinforce brand credibility and create long-lasting impressions with stakeholders.",
+                name: "Event Coverage",
+                description: "We document your events with photos and videos that capture every important moment and memory.",
                 price: "$800 - $3,000/event",
                 timeline: "1-3 weeks",
-                features: ["Event coverage", "Highlight videos", "Photo galleries", "Live streaming"]
+                features: ["Event photography", "Highlight video", "Photo gallery", "Live streaming"]
             },
             {
                 id: 53,
-                name: "Commercial/Brand Photography & Videography",
-                description: "We produce cinematic visuals that strengthen storytelling and brand positioning. A strong visual identity enhances campaigns and makes your brand more recognizable in the market.",
+                name: "Commercial/Brand Shoot",
+                description: "Cinematic brand storytelling visuals that make campaigns impactful and memorable.",
                 price: "$1,500 - $8,000/project",
                 timeline: "2-4 weeks",
-                features: ["Brand storytelling", "Commercial videos", "Corporate photography", "Creative direction"]
+                features: ["Brand storytelling", "Commercial video", "Corporate photography", "Creative direction"]
             },
             {
                 id: 54,
                 name: "Editing & Post-Production",
-                description: "We refine and enhance raw content into polished visuals that align with your brand's tone. High-quality editing ensures your brand communicates professionalism and excellence.",
+                description: "We turn raw footage into polished visuals with professional editing and enhancements.",
                 price: "$200 - $1,000/hour",
                 timeline: "1-2 weeks",
                 features: ["Video editing", "Color grading", "Audio mixing", "Motion graphics"]
@@ -214,35 +230,35 @@ export const servicesData = [
         subservices: [
             {
                 id: 61,
-                name: "AI Automation & Integration",
-                description: "We integrate AI into your workflows to automate repetitive tasks, saving time and reducing costs. By streamlining operations, your brand gains efficiency and capacity to scale faster.",
+                name: "AI Automation",
+                description: "Automate repetitive tasks with AI to save time and costs, making your operations faster and more efficient.",
                 price: "$5,000 - $20,000",
                 timeline: "6-12 weeks",
-                features: ["Workflow automation", "AI integration", "Process optimization", "Custom solutions"]
+                features: ["Workflow automation", "AI tools integration", "Efficiency boost", "Custom solutions"]
             },
             {
                 id: 62,
-                name: "Data Analytics",
-                description: "We analyze structured and unstructured data to uncover trends and opportunities. Actionable insights help your brand make smarter decisions, refine strategies, and enhance customer experiences.",
+                name: "Business Dashboards",
+                description: "Turn raw data into clear, interactive dashboards that help you monitor performance and make data-driven decisions.",
                 price: "$2,000 - $8,000",
                 timeline: "4-8 weeks",
-                features: ["Data visualization", "Predictive analytics", "Custom dashboards", "Reporting systems"]
+                features: ["Data visualization", "Custom KPIs", "Predictive analytics", "Reporting"]
             },
             {
                 id: 63,
-                name: "AI Model Development",
-                description: "We design and train AI/ML models tailored to your business needs. Predictive and prescriptive models empower your brand to innovate, personalize offerings, and stay ahead of competitors.",
+                name: "Custom AI Models",
+                description: "We design and train AI/ML models tailored to your needs, from predictions to personalized recommendations.",
                 price: "$8,000 - $30,000",
                 timeline: "8-16 weeks",
-                features: ["Custom AI models", "Machine learning", "Model training", "Deployment & monitoring"]
+                features: ["Custom AI models", "Machine learning", "Model training", "Deployment"]
             },
             {
                 id: 64,
-                name: "Data Science Consulting",
-                description: "We provide expert guidance on adopting data-driven strategies. This ensures your brand leverages the full potential of analytics and AI to remain competitive in evolving markets.",
+                name: "Data Strategy Consulting",
+                description: "Expert guidance to adopt data-driven strategies, ensuring your brand maximizes the value of analytics and AI.",
                 price: "$1,500 - $5,000",
                 timeline: "2-4 weeks",
-                features: ["Strategy consulting", "Data audit", "Implementation roadmap", "Team training"]
+                features: ["Data audit", "Strategy roadmap", "Implementation advice", "Team training"]
             }
         ]
     }
