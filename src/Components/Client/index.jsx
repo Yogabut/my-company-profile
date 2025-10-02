@@ -46,10 +46,10 @@ const Client = () => {
                 
                 {/* First marquee - moving right */}
                 <div 
-                    className="mb-6"
-                    data-aos="fade-right"
-                    data-aos-duration="1200"
-                    data-aos-delay="400"
+                className="mb-6"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                data-aos-delay="400"
                 >
                     <Marquee
                         direction="left"
@@ -58,34 +58,41 @@ const Client = () => {
                         pauseOnHover={true}
                     >
                         {[...clientsList, ...clientsList].map((client, index) => (
-                            <div
-                                key={`marquee1-${client.id}-${index}`}
-                                className="w-[160px] h-[160px] mx-4 bg-transparent border border-gray-500 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md transition-shadow duration-300"
-                            >
-                                {client.logo ? (
-                                    <img
-                                        src={client.logo}
-                                        alt={client.name}
-                                        className="w-full h-full object-contain p-2"
-                                    />
-                                ) : (
-                                    <div className="text-center p-2">
-                                        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-2"></div>
-                                        <span className="text-xs text-gray-400 font-medium">
-                                            {client.name}
-                                        </span>
-                                    </div>
-                                )}
+                        <div
+                            key={`marquee1-${client.id}-${index}`}
+                            className="
+                            w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] 
+                            md:w-[140px] md:h-[140px] lg:w-[160px] lg:h-[160px] 
+                            mx-2 sm:mx-3 lg:mx-4 
+                            bg-transparent border border-gray-500 
+                            rounded-lg shadow-sm flex items-center justify-center 
+                            hover:shadow-md transition-shadow duration-300
+                            "
+                        >
+                            {client.logo ? (
+                            <img
+                                src={client.logo}
+                                alt={client.name}
+                                className="w-full h-full object-contain p-2"
+                            />
+                            ) : (
+                            <div className="text-center p-2">
+                                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-2"></div>
+                                <span className="text-[10px] sm:text-xs text-gray-400 font-medium">
+                                {client.name}
+                                </span>
                             </div>
+                            )}
+                        </div>
                         ))}
                     </Marquee>
                 </div>
 
-                {/* Second marquee - moving left with reversed order */}
+                {/* Second marquee - moving left */}
                 <div
-                    data-aos="fade-left"
-                    data-aos-duration="1200"
-                    data-aos-delay="600"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                data-aos-delay="400"
                 >
                     <Marquee
                         direction="right"
@@ -94,25 +101,32 @@ const Client = () => {
                         pauseOnHover={true}
                     >
                         {[...reversedClientsList, ...reversedClientsList].map((client, index) => (
-                            <div
-                                key={`marquee2-${client.id}-${index}`}
-                                className="w-[160px] h-[160px] mx-4 bg-transparent border border-gray-500 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md transition-shadow duration-300"
-                            >
-                                {client.logo ? (
-                                    <img
-                                        src={client.logo}
-                                        alt={client.name}
-                                        className="w-full h-full object-contain p-2"
-                                    />
-                                ) : (
-                                    <div className="text-center p-2">
-                                        <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-blue-600 rounded-full mx-auto mb-2"></div>
-                                        <span className="text-xs text-gray-400 font-medium">
-                                            {client.name}
-                                        </span>
-                                    </div>
-                                )}
+                        <div
+                            key={`marquee2-${client.id}-${index}`}
+                            className="
+                            w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] 
+                            md:w-[140px] md:h-[140px] lg:w-[160px] lg:h-[160px] 
+                            mx-2 sm:mx-3 lg:mx-4 
+                            bg-transparent border border-gray-500 
+                            rounded-lg shadow-sm flex items-center justify-center 
+                            hover:shadow-md transition-shadow duration-300
+                            "
+                        >
+                            {client.logo ? (
+                            <img
+                                src={client.logo}
+                                alt={client.name}
+                                className="w-full h-full object-contain p-2"
+                            />
+                            ) : (
+                            <div className="text-center p-2">
+                                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-green-500 to-blue-600 rounded-full mx-auto mb-2"></div>
+                                <span className="text-[10px] sm:text-xs text-gray-400 font-medium">
+                                {client.name}
+                                </span>
                             </div>
+                            )}
+                        </div>
                         ))}
                     </Marquee>
                 </div>
