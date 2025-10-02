@@ -24,15 +24,15 @@ const Client = () => {
         <>  
             <div className="client py-8">
                 <div className="mb-13">
-                    <h1 
-                        className="text-gray-300 text-7xl justify-center flex font-extrabold"
+                    <h1 className="text-gray-300 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl justify-center flex font-extrabold text-center "
                         data-aos="fade-up"
                         data-aos-easing="ease-in-out"
                         data-aos-duration="1500"
                         data-aos-delay="0"
-                    >
-                        Our Clients
+                        >
+                            Our Clients
                     </h1>
+
                     <p 
                         className="text-gray-400 text-lg text-center mt-4 max-w-2xl mx-auto"
                         data-aos="fade-up"

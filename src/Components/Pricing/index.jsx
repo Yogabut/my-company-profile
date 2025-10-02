@@ -8,12 +8,11 @@ import './style.css';
 
 const ServicesDetail = () => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedCategory, setSelectedCategory] = useState('all');
     const [priceFilter, setPriceFilter] = useState('all');
     const [timelineFilter, setTimelineFilter] = useState('all');
     const [showFilters, setShowFilters] = useState(false);
 
-    // Initialize AOS
+
     useEffect(() => {
         AOS.init({
             duration: 800,
