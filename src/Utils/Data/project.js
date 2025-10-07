@@ -1,13 +1,13 @@
 export const projectData = [
     {
         id: 1,
-        image:"/product/coffeeshop.jpg",
-        image1:"/product/travel.jpg",
-        image2:"/product/psikotest.jpg",
-        image3:"/product/psikotest.jpg",
-        image4:"/product/architecture.jpg",
-        iamge5:"/product/coffeeshop.jpg",
-        title:"Kopiku Website",
+        image:"/architecture/1.png",
+        image1:"/architecture/2.png",
+        image2:"/architecture/3.png",
+        image3:"/architecture/4.png",
+        image4:"/architecture/5.png",
+        iamge5:"/architecture/6.png",
+        title:"Archi Studio Website",
         services:[
             "Web Development", 
             "Design & Visual"
@@ -19,21 +19,21 @@ export const projectData = [
             "Backend Development", 
             "SEO Optimization"
         ],
-        subdescription:"A landing page website for a coffee shop to showcase their products and services.",
-        description:"Kopiku is a coffee shop that offers a variety of coffee blends and pastries. The website features a modern design with a focus on showcasing their products and services, as well as providing information about the shop's history and values. A user-friendly interface allows customers to easily navigate the site and find what they are looking for. The website is optimized for search engines to increase visibility and attract more customers. Finally, the website is fully responsive and looks great on all devices, ensuring a seamless user experience.",
-        link:"https://kopiku.com",
+        subdescription:"A landing page website for a Architect Studio to showcase their products and services.",
+        description:"Archi Studio is an Architect Studio that offers a variety of architectural services. The website features a modern design with a focus on showcasing their products and services.",
+        link:"https://studio-archi.vercel.app/",
     },
 
 
     {
         id: 2,
-        image:"/product/travel.jpg",
-        image1:"/product/travel.jpg",
-        image2:"/product/psikotest.jpg",
-        image3:"/product/psikotest.jpg",
-        image4:"/product/architecture.jpg",
-        iamge5:"/product/coffeeshop.jpg",
-        title:"Travelin Website",
+        image:"/restaurant/1.png",
+        image1:"/restaurant/2.png",
+        image2:"/restaurant/3.png",
+        image3:"/restaurant/4.png",
+        image4:"/restaurant/5.png",
+        iamge5:"/restaurant/6.png",
+        title:"Eleganza Italian Restaurant Website",
         services:[
             "Web Development", 
             "Design & Visual"
@@ -45,33 +45,34 @@ export const projectData = [
             "Backend Development", 
             "SEO Optimization"
         ],
-        subdescription:"A landing page website for a travel agency to showcase their travel packages and services.",
-        description:"Travelin is a travel agency that offers a variety of travel packages and services. The website features a modern design with a focus on showcasing their travel packages and services.",
-        link:"https://travelin.com",
+        subdescription:"A landing page website for an Italian Restaurant to showcase their menu and services.",
+        description:"Eleganza is an Italian Restaurant that offers a variety of Italian dishes. The website features a modern design with a focus on showcasing their menu and services.",
+        link:"https://eleganza-dining.vercel.app/",
     },
 
 
     {
         id: 3,
-        image:"/product/psikotest.jpg",
-        image1:"/product/travel.jpg",
-        image2:"/product/psikotest.jpg",
-        image3:"/product/psikotest.jpg",
-        image4:"/product/architecture.jpg",
-        iamge5:"/product/coffeeshop.jpg",
-        title:"Psitest Mobile App",
+        image:"/personal/1.png",
+        image1:"/personal/2.png",
+        image2:"/personal/3.png",
+        image3:"/personal/4.png",
+        image4:"/personal/5.png",
+        iamge5:"/personal/6.png",
+        title:"Personal Portfolio Website",
         services:[
-            "Mobile Development"
+            "Web Development", 
+            "Design & Visual"
         ],
         subservices:[
             "UI/UX Design",
             "System Design",
-            "Andoid Development",
-            "iOS Development"
+            "Frontend Development", 
+            "SEO Optimization"
         ],
-        subdescription:"A mobile application for a psychological testing service to provide users with various psychological tests and assessments.",
-        description:"Psitest is a psychological testing service that offers a variety of psychological tests and assessments. The mobile application features a modern design with a focus on providing users with easy access to various psychological tests and assessments.",
-        link:"https://psitest.com",
+        subdescription:"A personal portfolio website to showcase my skills, projects, and experience.",
+        description:"This personal portfolio website is designed to showcase my skills, projects, and experience. The website features a modern design with a focus on showcasing my work and achievements.",
+        link:"https://yogaasta-portfolio.netlify.app/",
     },
 
     
