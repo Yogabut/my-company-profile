@@ -14,7 +14,7 @@
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/vite": "^4.1.13",
     "aos": "^2.3.4",
-    "framer-motion": "^12.23.12",
+    "framer-motion": "^12.23.22",
     "lucide-react": "^0.542.0",
     "marquee": "^0.2.1",
     "react": "^19.1.1",

@@ -6,6 +6,7 @@ import AllProject from './Pages/OtherProject.jsx'
 import ServiceDetailPage from './Pages/Service.jsx'
 import Navbar from './Components/Navbar/index.jsx'
 import Footer from './Components/Footer/index.jsx'
+import NotFound from './Pages/NotFound.jsx'
 import './App.css'
 
 
@@ -34,6 +35,7 @@ function App() {
           <Route path='/project/:id/:title' element={<ProjectDetailPage />} />
           <Route path='/all-project' element={<AllProject />} />
           <Route path='/services/:id/:title' element={<ServiceDetailPage />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>
