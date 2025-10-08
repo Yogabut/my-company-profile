@@ -33,7 +33,7 @@ export const projectData = [
         image3:"/restaurant/4.png",
         image4:"/restaurant/5.png",
         iamge5:"/restaurant/6.png",
-        title:"Eleganza Italian Restaurant Website",
+        title:"Italian Restaurant Website",
         services:[
             "Web Development", 
             "Design & Visual"
@@ -96,5 +96,29 @@ export const projectData = [
         subdescription:"A promotional video for an architecture firm to showcase their portfolio and services.",
         description:"Kotak Architecture is an architecture firm that offers a variety of architectural services. The promotional video features a modern design with a focus on showcasing their portfolio and services.",
         link:"https://kotakarchitecture.com",
+    },
+    {
+        id: 5,
+        image:"/travel/1.png",
+        image1:"/travel/2.png",
+        image2:"/travel/3.png",
+        image3:"/travel/4.png",
+        image4:"/travel/5.png",
+        iamge5:"/travel/8.png",
+        title:"Bali Explorer Travel Agency Website",
+        services:[
+            "Web Development", 
+            "Design & Visual"
+        ],
+        subservices:[
+            "UI/UX Design",
+            "System Design",
+            "Frontend Development", 
+            "SEO Optimization"
+        ],
+        subdescription:"A Fullstack website for a Travel Agency to showcase their travel packages and services.",
+        description:"Bali Explorer is a Travel Agency that offers a variety of travel packages. The website features a modern design with a focus on showcasing their travel packages and services. The website also includes a booking system for customers to easily book their travel packages, making it convenient for users to plan their trips. The website is built using React for the frontend and Node.js for the backend, ensuring a seamless and responsive user experience.",
+        link:"https://bali-travel-nine.vercel.app/",
     }
+
 ]
