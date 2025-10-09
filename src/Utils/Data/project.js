@@ -119,6 +119,29 @@ export const projectData = [
         subdescription:"A Fullstack website for a Travel Agency to showcase their travel packages and services.",
         description:"Bali Explorer is a Travel Agency that offers a variety of travel packages. The website features a modern design with a focus on showcasing their travel packages and services. The website also includes a booking system for customers to easily book their travel packages, making it convenient for users to plan their trips. The website is built using React for the frontend and Node.js for the backend, ensuring a seamless and responsive user experience.",
         link:"https://bali-travel-nine.vercel.app/",
+    },
+    {
+        id: 6,
+        image:"/Kopiku/1.png",
+        image1:"/Kopiku/2.png",
+        image2:"/Kopiku/3.png",
+        image3:"/Kopiku/4.png",
+        image4:"/Kopiku/5.png",
+        iamge5:"/Kopiku/6.png",
+        title:"Kopiku Cafe Website",
+        services:[
+            "Web Development", 
+            "Design & Visual"
+        ],
+        subservices:[
+            "UI/UX Design",
+            "System Design",
+            "Frontend Development", 
+            "SEO Optimization"
+        ],
+        subdescription:"A Company website for a Coffee Shop to showcase their cafe menu and space.",
+        description:"Kopiku Cafe is a cozy coffee shop in Bali serving freshly brewed coffee, non-coffee beverages, and delicious pastries in a warm, modern space perfect for work or chill.",
+        link:"https://kopiku-cafe.vercel.app/",
     }
 
 ]

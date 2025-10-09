@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Home from './Pages/Home.jsx'
 import ProjectDetailPage from './Pages/ProjectDetail.jsx'
