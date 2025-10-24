@@ -142,6 +142,30 @@ export const projectData = [
         subdescription:"A Company website for a Coffee Shop to showcase their cafe menu and space.",
         description:"Kopiku Cafe is a cozy coffee shop in Bali serving freshly brewed coffee, non-coffee beverages, and delicious pastries in a warm, modern space perfect for work or chill.",
         link:"https://kopiku-cafe.vercel.app/",
-    }
+    },
+    {
+        id: 7,
+        image:"/dapur-ibu/1.png",
+        image1:"/dapur-ibu/2.png",
+        image2:"/dapur-ibu/3.png",
+        image3:"/dapur-ibu/4.png",
+        image4:"/dapur-ibu/5.png",
+        iamge5:"/dapur-ibu/6.png",
+        title:"Dapur Ibu Catering Website",
+        services:[
+            "Web Development", 
+            "Design & Visual"
+        ],
+        subservices:[
+            "UI/UX Design",
+            "System Design",
+            "Eccomerce Website", 
+            "SEO Optimization"
+        ],
+        subdescription:"A Catering Eccomerce website for a catering to showcase and sale their menu",
+        description:"Dapur Ibu is a modern, SEO-optimized website for a Bali-based home-style catering service. The site highlights authentic Indonesian cuisine and offers easy navigation for event and daily catering inquiries. Built with optimized meta tags, Open Graph, and structured data (JSON-LD) for better Google visibility. As the Full-stack Developer, I handled design, structure, and deployment to ensure responsive performance and strong online presence.",
+        link:"https://moms-kitchen-xi.vercel.app/",
+    },
+
 
 ]
